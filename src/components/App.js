@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Form, FormControl, Button } from 'react-bootstrap';
 import './App.css';
 import AgeStats from './AgeStats';
+import age from '../assets/age.jpg'
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <img src={age} alt="age" className="ageimage"/>
         <Form inline>
           <h2>Input Your Birthday!</h2>
           <FormControl 
